@@ -1,3 +1,33 @@
+
+/*--------------------Fonts---------------------*/
+
+@font-face{
+font-family: 'Open-Sans';
+src: url('serifs/Open-Sans.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: 'Open-Sans-Bold';
+src: url('serifs/Open-Sans-Bold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face{
+font-family: 'Raleway-Bold';
+src: url('serifs/Raleway-Bold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face{
+font-family: 'Raleway';
+src: url('serifs/Raleway-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+/*--------------------HTML----------------------*/
+
 body {
 	margin: 0;
 	padding: 0;
