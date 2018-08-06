@@ -170,7 +170,10 @@ a {
 .works .bg_red {
 	width: 100%;
 	height: 100%;
+}
+.works .bg_red:hover {
 	background: rgba(240, 70, 70, 0.9);
+	transition: 0.4s;
 }
 .works .work1 {
 	background: url(images/Work1.png);
@@ -205,6 +208,7 @@ a {
 	background-size: cover;
 }
 .works h5 {
+	visibility: hidden;
 	font-size: 14px;
 	font-family: "Raleway";
 	color: #fff;
@@ -215,11 +219,20 @@ a {
 	padding: 155px 0 0 0;
 }
 .works p {
+	visibility: hidden;
 	font-size: 14px;
 	font-family: "Raleway";
 	color: #fff;
 	margin: 15px 0 0 0;
 	text-align: center;
+}
+.works .bg_red:hover h5 {
+	transition-delay: 0.2s;
+	visibility: visible;
+}
+.works .bg_red:hover p {
+	transition-delay: 0.2s;
+	visibility: visible;
 }
 
 /*--------------------footer--------------------*/
