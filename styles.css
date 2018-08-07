@@ -166,14 +166,9 @@ a {
 .works .work {
 	width: 25%;
 	height: 350px;
-}
-.works .bg_red {
-	width: 100%;
-	height: 100%;
-}
-.works .bg_red:hover {
-	background: rgba(240, 70, 70, 0.9);
-	transition: 0.4s;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	box-sizing: border-box;
 }
 .works .work1 {
 	background: url(images/Work1.png);
@@ -190,6 +185,7 @@ a {
 .works .work4 {
 	background: url(images/Work4.png);
 	background-size: cover;
+	border-right: 0;
 }
 .works .work5 {
 	background: url(images/Work5.png);
@@ -206,6 +202,11 @@ a {
 .works .work8 {
 	background: url(images/Work8.png);
 	background-size: cover;
+	border-right: 0;
+}
+.works .bg_red {
+	width: 100%;
+	height: 100%;
 }
 .works h5 {
 	visibility: hidden;
@@ -226,14 +227,78 @@ a {
 	margin: 15px 0 0 0;
 	text-align: center;
 }
+.works .bg_red:hover {
+	background: rgba(240, 70, 70, 0.9);
+	transition: 0.3s;
+}
 .works .bg_red:hover h5 {
-	transition-delay: 0.2s;
+	transition-delay: 0.1s;
 	visibility: visible;
 }
 .works .bg_red:hover p {
-	transition-delay: 0.2s;
+	transition-delay: 0.1s;
 	visibility: visible;
 }
 
 /*--------------------footer--------------------*/
 
+footer {
+	width: 100%;
+	height: 340px;
+}
+footer .container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+}
+.prefooter {
+	background: #3A3E64;
+	height: 250px;
+}
+.copyright {
+	background: #313454;
+	height: 90px;
+}
+footer h3 {
+	color: #fff;
+	font-size: 14px;
+	font-family: "Raleway";
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 70px 0 25px 0; 
+}
+footer p {
+	margin: 0;
+	font-size: 14px;
+	font-family: "Raleway";
+	color: #fff;
+	line-height: 1.6;
+	opacity: 0.5;
+}
+.about {
+	flex: 1;
+}
+.copyright pre {
+	margin: auto 0;
+	font-size: 14px;
+	font-family: "Raleway";
+	color: #808080;
+	line-height: 1.6;
+}
+.copyright .red {
+	font-size: 28px;
+	color: #E84545;
+	font-style: italic;
+	text-shadow: 0 0 20px #f48104,
+   0 0 30px #FEEC85,
+   0 0 40px #f48104,
+   0 0 50px #EC760C,
+   0 0 60px #CD4606,
+   0 0 70px #ed0103,
+   0 -30px 50px #C70000;
+}
+.copyright .white {
+	color: #fff;
+}
